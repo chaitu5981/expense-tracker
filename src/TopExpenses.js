@@ -8,7 +8,7 @@ const TopExpenses = () => {
     <div className="top-expenses">
       <h3>Top Expenses</h3>
       <div className="bar-chart">
-        <ResponsiveContainer width="100%" height={300} >
+        <ResponsiveContainer width="100%" height={300} style={{ display : "flex", justifyContent: "center" }}>
           <BarChart
             width="70%"
             height={300}
@@ -17,7 +17,7 @@ const TopExpenses = () => {
             margin={{
               top: 5,
               right: 30,
-              left: 10,
+              left: 0,
               bottom: 5,
             }}
           >
