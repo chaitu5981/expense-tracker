@@ -1,0 +1,64 @@
+.summary {
+  display: flex;
+  padding: 2rem 7rem;
+  width: full;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(108, 108, 108);
+  border-radius: 10px;
+}
+.text-summary {
+  flex-basis: 75%;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+.wallet,
+.expenses-total {
+  background-color: darkgray;
+  border-radius: 10px;
+  width: 20rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.balance {
+  color: rgb(3, 239, 3);
+}
+.total {
+  color: #f4bb4a;
+}
+.add-income-btn {
+  background-color: rgb(3, 239, 3);
+  padding: 8px 20px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+}
+.add-expense-btn {
+  background: linear-gradient(to right, #ffcccb, #ff0000);
+
+  padding: 8px 20px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+}
+.pie-chart {
+  height: 13rem;
+  flex-basis: 24%;
+}
+
+@media (max-width: 1180px) {
+  .summary {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 730px) {
+  .text-summary {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,100 @@
+.transactions {
+  width: 60%;
+  height: 20rem;
+}
+.table-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  height: 100%;
+  margin-top: 1rem;
+  padding: 10px 0;
+}
+.table {
+  width: 100%;
+  padding: 0px 10px;
+  height: 80%;
+}
+
+.transaction {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+.category-icon {
+  color: black;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+.title-box {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.title {
+  color: black;
+}
+.date-display {
+  color: gray;
+}
+.price-display {
+  color: #f4bb4a;
+}
+.btn1 {
+  width: 1.7rem;
+  height: 1.7rem;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+.delete-btn {
+  background-color: red;
+}
+.edit-btn {
+  background-color: #f4bb4a;
+}
+.pages {
+  display: flex;
+  gap: 1rem;
+}
+.page {
+  background-color: #43967b;
+  color: white;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow-btn {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 2px 2px lightgray;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1180px) {
+  .transactions {
+    width: 100%;
+  }
+}
