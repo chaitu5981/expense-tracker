@@ -8,7 +8,7 @@ const TopExpenses = () => {
     <div className="top-expenses">
       <h3>Top Expenses</h3>
       <div className="bar-chart">
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer>
           <BarChart
             width={500}
             height={300}
