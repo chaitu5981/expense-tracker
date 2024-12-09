@@ -45,6 +45,7 @@ const Modal = ({ isOpen, close, type, id }) => {
       <ReactModal isOpen={isOpen} className="modal" contentLabel="Add Balance">
         {!id ? (
           <div>
+            <h3>Add Expense</h3>
             <ExpenseForm isOpen={isOpen} close={close} btnTitle="Add Expense" />
           </div>
         ) : (
@@ -183,7 +184,9 @@ const ExpenseForm = ({ isOpen, close, btnTitle, id }) => {
         className="input date"
         name="date"
         value={
-          expense.date ? new Date(expense.date).toISOString().split("T")[0] : ""
+          expense?.date
+            ? new Date(expense?.date).toISOString().split("T")[0]
+            : ""
         }
         onChange={handleChange}
       />

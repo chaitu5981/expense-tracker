@@ -61,4 +61,8 @@
   .text-summary {
     flex-direction: column;
   }
+  .wallet,
+  .expenses-total {
+    width: 18rem;
+  }
 }
