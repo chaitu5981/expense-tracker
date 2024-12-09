@@ -54,12 +54,12 @@
 @media (max-width: 1180px) {
   .summary {
     flex-direction: column;
-    width: 100%;
   }
 }
 
 @media (max-width: 730px) {
   .text-summary {
+    width: 100%;
     flex-direction: column;
   }
   .wallet,

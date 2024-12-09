@@ -58,6 +58,6 @@
 
 @media (max-width: 730px) {
   .modal {
-    width: 100vw;
+    width: 100%;
   }
 }
