@@ -10,13 +10,13 @@ const TopExpenses = () => {
       <div className="bar-chart">
         <ResponsiveContainer width="100%" height={300} style={{ display : "flex", justifyContent: "center" }}>
           <BarChart
-            width="70%"
+            width="100%"
             height={300}
             layout="vertical"
             data={chartData}
             margin={{
               top: 5,
-              right: 30,
+              right: 0,
               left: 0,
               bottom: 5,
             }}
