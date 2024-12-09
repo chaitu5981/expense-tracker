@@ -8,7 +8,7 @@
   border-radius: 10px;
 }
 .text-summary {
-  flex-basis: 75%;
+  width: 75%;
   display: flex;
   gap: 1rem;
   justify-content: space-around;
@@ -48,12 +48,13 @@
 }
 .pie-chart {
   height: 13rem;
-  flex-basis: 24%;
+  width: 25%;
 }
 
 @media (max-width: 1180px) {
   .summary {
     flex-direction: column;
+    width: 100%;
   }
 }
 

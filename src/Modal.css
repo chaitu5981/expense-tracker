@@ -55,3 +55,9 @@
   display: none;
   --webkit-appearance: none;
 }
+
+@media (max-width: 730px) {
+  .modal {
+    width: 100vw;
+  }
+}
