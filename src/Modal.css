@@ -48,7 +48,10 @@
   padding: 10px;
   border-radius: 5px;
 }
+.date {
+  background-color: white;
+}
 .date::-webkit-calendar-picker-indicator {
   display: none;
-  background-color: white;
+  --webkit-appearance: none;
 }
