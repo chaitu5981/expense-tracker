@@ -8,7 +8,7 @@ const TopExpenses = () => {
     <div className="top-expenses">
       <h3>Top Expenses</h3>
       <div className="bar-chart">
-        <ResponsiveContainer>
+        
           <BarChart
             width={500}
             height={300}
@@ -30,7 +30,7 @@ const TopExpenses = () => {
               radius={[0, 12, 12, 0]}
             />
           </BarChart>
-        </ResponsiveContainer>
+        
       </div>
     </div>
   );
