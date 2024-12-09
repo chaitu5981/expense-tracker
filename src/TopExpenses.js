@@ -22,7 +22,7 @@ const TopExpenses = () => {
             }}
           >
             <XAxis type="number" hide />
-            <YAxis dataKey="name" type="category" />
+            <YAxis dataKey="name" type="category" width={200} />
             <Bar
               barSize={30}
               dataKey="value"
