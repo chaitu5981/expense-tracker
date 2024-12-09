@@ -6,7 +6,7 @@
 }
 
 .bar-chart {
-  height: 20rem;
+  min-height: 20rem;
   width: full;
   background-color: white;
   border-radius: 10px;

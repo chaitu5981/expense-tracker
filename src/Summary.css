@@ -6,6 +6,7 @@
   align-items: center;
   background-color: rgb(108, 108, 108);
   border-radius: 10px;
+  gap: 2rem;
 }
 .text-summary {
   width: 75%;
@@ -46,14 +47,25 @@
   color: white;
   border: none;
 }
+
+.pie-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+}
 .pie-chart {
-  height: 13rem;
   width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 1180px) {
   .summary {
     flex-direction: column;
+    padding: 2rem 2rem;
+    gap: 2rem;
   }
 }
 
@@ -64,6 +76,9 @@
   }
   .wallet,
   .expenses-total {
+    width: 100%;
+  }
+  .pie-chart {
     width: 100%;
   }
 }

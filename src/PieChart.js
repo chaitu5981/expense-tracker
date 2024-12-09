@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { ExpenseContext } from "./App";
 import { PieChart as Chart, Pie, Cell, Legend } from "recharts";
+import "./PieChart.css";
 const COLORS = ["#A000FF", "#FF9304", "#FDE006"];
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({
@@ -33,11 +34,11 @@ const PieChart = () => {
 
   return (
     <div>
-      <Chart width={300} height={215}>
+      <Chart width={300} height={300} className="pie">
         <Pie
           data={chartData}
-          cx={140}
-          cy={90}
+          cx={130}
+          cy={130}
           labelLine={false}
           label={renderCustomizedLabel}
           outerRadius={85}

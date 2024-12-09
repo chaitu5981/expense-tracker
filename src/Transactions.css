@@ -6,12 +6,13 @@
 }
 .table-container {
   display: flex;
-  height: 20rem;
+  min-height: 20rem;
   flex-direction: column;
   background-color: white;
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
+  gap: 1rem;
   padding: 10px 0;
 }
 .table {
