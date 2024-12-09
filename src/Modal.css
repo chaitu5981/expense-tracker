@@ -14,7 +14,6 @@
   margin-top: 20px;
   flex-wrap: wrap;
   display: flex;
-  /* justify-content: space-between; */
   gap: 10px;
 }
 
@@ -41,6 +40,7 @@
   border: none;
   outline: none;
   padding: 10px;
+  background-color: white;
 }
 .cancel-btn {
   border: none;
@@ -50,4 +50,5 @@
 }
 .date::-webkit-calendar-picker-indicator {
   display: none;
+  background-color: white;
 }

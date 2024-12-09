@@ -43,16 +43,21 @@ const Modal = ({ isOpen, close, type, id }) => {
   else
     return (
       <ReactModal isOpen={isOpen} className="modal" contentLabel="Add Balance">
-        <h3>Add Expenses</h3>
         {!id ? (
-          <ExpenseForm isOpen={isOpen} close={close} btnTitle="Add Expense" />
+          <div>
+            <ExpenseForm isOpen={isOpen} close={close} btnTitle="Add Expense" />
+          </div>
         ) : (
-          <ExpenseForm
-            isOpen={isOpen}
-            close={close}
-            id={id}
-            btnTitle="Update Expense"
-          />
+          <div>
+            <h3>Update Expense</h3>
+
+            <ExpenseForm
+              isOpen={isOpen}
+              close={close}
+              id={id}
+              btnTitle="Update Expense"
+            />
+          </div>
         )}
       </ReactModal>
     );
