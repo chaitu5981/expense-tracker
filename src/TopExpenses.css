@@ -4,13 +4,35 @@
   flex-direction: column;
   gap: 1rem;
 }
+.bar {
+  justify-content: center;
+  display: flex;
+}
+.inner-bar {
+  overflow: visible;
+}
 
+.recharts-surface {
+  overflow: visible;
+}
 .bar-chart {
   min-height: 20rem;
   width: 100%;
   background-color: white;
   border-radius: 10px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recharts-cartesian-axis-line {
+  display: none;
+}
+.recharts-cartesian-axis-ticks {
+}
+.recharts-cartesian-axis-tick-line {
+  display: none;
 }
 
 @media (max-width: 1180px) {
