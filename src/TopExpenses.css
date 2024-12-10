@@ -14,6 +14,8 @@
 
 .recharts-surface {
   overflow: visible;
+  justify-content: flex-start;
+  display: flex;
 }
 .bar-chart {
   min-height: 20rem;
@@ -29,8 +31,7 @@
 .recharts-cartesian-axis-line {
   display: none;
 }
-.recharts-cartesian-axis-ticks {
-}
+
 .recharts-cartesian-axis-tick-line {
   display: none;
 }

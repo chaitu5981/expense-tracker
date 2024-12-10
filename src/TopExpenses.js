@@ -8,17 +8,17 @@ const TopExpenses = () => {
     <div className="top-expenses">
       <h3>Top Expenses</h3>
       <div className="bar-chart">
-        <ResponsiveContainer width="90%" height={300} className="bar">
+        <ResponsiveContainer width="100%" height={300} className="bar">
           <BarChart
             className="inner-bar"
-            width="90%"
+            width="100%"
             height={300}
             layout="vertical"
             data={chartData}
             margin={{
               top: 5,
-              right: 20,
-              left: 20,
+              right: 10,
+              left: 0,
               bottom: 5,
             }}
           >
