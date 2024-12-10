@@ -182,6 +182,7 @@ const ExpenseForm = ({ isOpen, close, btnTitle, id }) => {
       <input
         type="date"
         className="input date"
+        placeholder="Date"
         name="date"
         value={
           expense?.date
