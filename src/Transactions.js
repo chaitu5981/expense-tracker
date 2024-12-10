@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import "./Transactions.css";
 import { ExpenseContext } from "./App";
 import { TiDeleteOutline } from "react-icons/ti";
@@ -14,6 +14,8 @@ const Transactions = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [pagedExpenses, setPagedExpenses] = useState([]);
   const [noOfPages, setNoOfPages] = useState(0);
+  const leftRef = useRef();
+  const rightRef = useRef();
   useEffect(() => {
     let n = expenses.length;
     if (n % 4 === 0) setNoOfPages(n / 4);
@@ -27,7 +29,12 @@ const Transactions = () => {
     if (i < n) pagedExpenses1.push(expenses.slice(i, n));
     setPagedExpenses(pagedExpenses1);
   }, [expenses]);
-
+  useEffect(() => {
+    if (currentPage === 0) leftRef.current.disabled = true;
+    else leftRef.current.disabled = false;
+    if (currentPage === noOfPages - 1) rightRef.current.disabled = true;
+    else rightRef.current.disabled = false;
+  }, [currentPage, noOfPages]);
   const gotoNextPage = () => {
     if (currentPage < noOfPages - 1) setCurrentPage(currentPage + 1);
   };
@@ -40,11 +47,11 @@ const Transactions = () => {
       <div className="table-container">
         <Table expensePage={pagedExpenses[currentPage]} />
         <div className="pages">
-          <button className="arrow-btn" onClick={gotoPrevPage}>
+          <button className="arrow-btn" onClick={gotoPrevPage} ref={leftRef}>
             <FaArrowLeft />
           </button>
           <div className="page">{currentPage + 1}</div>
-          <button className="arrow-btn" onClick={gotoNextPage}>
+          <button className="arrow-btn" onClick={gotoNextPage} ref={rightRef}>
             <FaArrowRight />
           </button>
         </div>
