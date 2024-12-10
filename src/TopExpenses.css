@@ -16,9 +16,10 @@
   overflow: visible;
   justify-content: flex-start;
   display: flex;
+  flex-direction: column;
 }
 .bar-chart {
-  min-height: 20rem;
+  height: 18rem;
   width: 100%;
   background-color: white;
   border-radius: 10px;

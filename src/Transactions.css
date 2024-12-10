@@ -6,7 +6,7 @@
 }
 .table-container {
   display: flex;
-  min-height: 20rem;
+  height: 18rem;
   flex-direction: column;
   background-color: white;
   justify-content: space-between;

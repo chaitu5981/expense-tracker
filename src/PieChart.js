@@ -34,7 +34,7 @@ const PieChart = () => {
 
   return (
     <div>
-      <Chart width={300} height={300} className="pie">
+      <Chart width={300} height={250} className="pie">
         <Pie
           data={chartData}
           cx={130}

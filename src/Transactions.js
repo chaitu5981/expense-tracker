@@ -18,13 +18,13 @@ const Transactions = () => {
   const rightRef = useRef();
   useEffect(() => {
     let n = expenses.length;
-    if (n % 4 === 0) setNoOfPages(n / 4);
-    else setNoOfPages(Math.floor(n / 4) + 1);
+    if (n % 3 === 0) setNoOfPages(n / 3);
+    else setNoOfPages(Math.floor(n / 3) + 1);
     let i = 0;
     let pagedExpenses1 = [];
-    while (i + 4 < n) {
-      pagedExpenses1.push(expenses.slice(i, i + 4));
-      i = i + 4;
+    while (i + 3 < n) {
+      pagedExpenses1.push(expenses.slice(i, i + 3));
+      i = i + 3;
     }
     if (i < n) pagedExpenses1.push(expenses.slice(i, n));
     setPagedExpenses(pagedExpenses1);
